@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+	<title></title>
+	<meta name="generator" content="LibreOffice 7.4.7.2 (Linux)"/>
+	<meta name="created" content="2026-10-05T18:07:34.399789933"/>
+	<meta name="changed" content="2026-10-05T18:09:14.931711150"/>
+	<style type="text/css">
+		@page { size: 8.5in 11in; margin: 0.79in }
+		p { line-height: 115%; margin-bottom: 0.1in; background: transparent }
+	</style>
+</head>
+<body lang="en-US" link="#000080" vlink="#800000" dir="ltr"><p style="line-height: 100%; margin-bottom: 0in">
+&lt;!DOCTYPE html&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;html lang=&quot;id&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;meta
+charset=&quot;UTF-8&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;meta
+name=&quot;viewport&quot; content=&quot;width=device-width,
+initial-scale=1.0&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;title&gt;Kuis
+Matematika Random Seru&lt;/title&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;!--
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;!-- 1.
+MEMUAT SCRIPT POKI SDK RESMI            --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;!--
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;script
+src=&quot;https://poki.com&quot;&gt;&lt;/script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        //
+Menginisialisasi SDK sebelum game dimulai</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+PokiSDK.init().then(() =&gt; {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+console.log(&quot;Poki SDK berhasil aktif!&quot;);</p>
+<p style="line-height: 100%; margin-bottom: 0in">            //
+Beritahu Poki kalau proses loading game sudah selesai</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+PokiSDK.gameLoadingFinished(); 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }).catch(()
+=&gt; {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+console.log(&quot;Gagal memuat SDK, masuk ke mode offline.&quot;);</p>
+<p style="line-height: 100%; margin-bottom: 0in">        });</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;/script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        * {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+box-sizing: border-box;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        body {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+background: linear-gradient(135deg, #111827 0%, #312e81 100%);</p>
+<p style="line-height: 100%; margin-bottom: 0in">            display:
+flex;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+justify-content: center;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+align-items: center;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            height:
+100vh;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            margin:
+0;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            color:
+#333;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+#game-container {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+background: white;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            padding:
+30px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+border-radius: 20px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+box-shadow: 0 10px 25px rgba(0,0,0,0.4);</p>
+<p style="line-height: 100%; margin-bottom: 0in">            width:
+100%;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+max-width: 450px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+text-align: center;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        .stats-bar {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            display:
+flex;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+justify-content: space-between;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+margin-bottom: 20px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-weight: bold;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-size: 1.1rem;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        #timer {
+color: #dc2626; }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        #score {
+color: #2563eb; }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        #lives {
+color: #dc2626; }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        #question {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-size: 2.8rem;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            margin:
+20px 0;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-weight: bold;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            color:
+#1f2937;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+.options-grid {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            display:
+grid;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+grid-template-columns: repeat(2, 1fr);</p>
+<p style="line-height: 100%; margin-bottom: 0in">            gap:
+15px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+margin-top: 20px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        .btn-option
+{</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+background-color: #f3f4f6;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            border:
+2px solid #e5e7eb;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            padding:
+15px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-size: 1.4rem;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-weight: bold;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+border-radius: 12px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            cursor:
+pointer;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+transition: all 0.2s ease;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+.btn-option:hover {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+background-color: #e5e7eb;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+transform: translateY(-2px);</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+.btn-option:active {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+transform: translateY(0);</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+#game-over-screen {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            display:
+none;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        .btn-restart
+{</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+background-color: #10b981;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            color:
+white;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            border:
+none;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            padding:
+12px 30px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+font-size: 1.1rem;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+border-radius: 8px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            cursor:
+pointer;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+margin-top: 20px;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">       
+.btn-restart:hover { background-color: #059669; }</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;/style&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;/head&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;div
+id=&quot;game-container&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;!-- Area
+Permainan --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;div
+id=&quot;play-screen&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;div
+class=&quot;stats-bar&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                &lt;div
+id=&quot;timer&quot;&gt;Waktu: 15s&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                &lt;div
+id=&quot;score&quot;&gt;Skor: 0&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                &lt;div
+id=&quot;lives&quot;&gt;Nyawa: ❤️❤️❤️&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;div
+id=&quot;question&quot;&gt;0 + 0 = ?&lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;div
+class=&quot;options-grid&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+&lt;button class=&quot;btn-option&quot;
+onclick=&quot;periksaJawaban(this)&quot;&gt;0&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+&lt;button class=&quot;btn-option&quot;
+onclick=&quot;periksaJawaban(this)&quot;&gt;0&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+&lt;button class=&quot;btn-option&quot;
+onclick=&quot;periksaJawaban(this)&quot;&gt;0&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+&lt;button class=&quot;btn-option&quot;
+onclick=&quot;periksaJawaban(this)&quot;&gt;0&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;!--
+Layar Game Over --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;div
+id=&quot;game-over-screen&quot;&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;h2&gt;Game
+Over! 🎮&lt;/h2&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;p
+style=&quot;font-size: 1.2rem;&quot;&gt;Skor Akhir Anda:&lt;/p&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;h1
+id=&quot;final-score&quot; style=&quot;color: #2563eb; font-size:
+3rem; margin: 10px 0;&quot;&gt;0&lt;/h1&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;button
+class=&quot;btn-restart&quot; onclick=&quot;mulaiGame()&quot;&gt;Main
+Lagi&lt;/button&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;/div&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        let skor =
+0;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        let nyawa =
+3;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        let waktu =
+15;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        let
+jawabanBenar = 0;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        let
+intervalTimer;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        // Memulai
+game pertama kali</p>
+<p style="line-height: 100%; margin-bottom: 0in">        mulaiGame();</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+mulaiGame() {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            skor =
+0;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            nyawa =
+3;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('play-screen').style.display = 'block';</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('game-over-screen').style.display = 'none';</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+perbaruiStatus();</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+buatSoalBaru();</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+buatSoalBaru() {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            waktu =
+15;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('timer').innerText = `Waktu: ${waktu}s`;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+clearInterval(intervalTimer);</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+intervalTimer = setInterval(() =&gt; {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+waktu--;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+document.getElementById('timer').innerText = `Waktu: ${waktu}s`;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                if
+(waktu &lt;= 0) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+clearInterval(intervalTimer);</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+kurangiNyawa();</p>
+<p style="line-height: 100%; margin-bottom: 0in">                }</p>
+<p style="line-height: 100%; margin-bottom: 0in">            },
+1000);</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            const
+listOperator = ['+', '-', '×', '÷'];</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let
+operator = listOperator[Math.floor(Math.random() *
+listOperator.length)];</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let
+angka1, angka2;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            if
+(operator === '+') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka1 = Math.floor(Math.random() * 30) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka2 = Math.floor(Math.random() * 30) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+jawabanBenar = angka1 + angka2;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            } 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            else if
+(operator === '-') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka1 = Math.floor(Math.random() * 30) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka2 = Math.floor(Math.random() * 30) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                if
+(angka1 &lt; angka2) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+let temp = angka1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+angka1 = angka2;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+angka2 = temp;</p>
+<p style="line-height: 100%; margin-bottom: 0in">                }</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+jawabanBenar = angka1 - angka2;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            } 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            else if
+(operator === '×') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka1 = Math.floor(Math.random() * 10) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka2 = Math.floor(Math.random() * 10) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+jawabanBenar = angka1 * angka2;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            } 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            else if
+(operator === '÷') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka2 = Math.floor(Math.random() * 10) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+jawabanBenar = Math.floor(Math.random() * 10) + 1;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+angka1 = angka2 * jawabanBenar;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            //
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;!--
+2. MEMBERITAHU POKI GAMEPLAY DIMULAI       --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;!--
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            if
+(typeof PokiSDK !== 'undefined') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+PokiSDK.gameplayStart();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('question').innerText = `${angka1}
+${operator} ${angka2} = ?`;</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let
+pilihan = [jawabanBenar];</p>
+<p style="line-height: 100%; margin-bottom: 0in">            while
+(pilihan.length &lt; 4) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                let
+jawabanSalah = jawabanBenar + (Math.floor(Math.random() * 9) - 4); 
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">                if
+(jawabanSalah !== jawabanBenar &amp;&amp;
+!pilihan.includes(jawabanSalah) &amp;&amp; jawabanSalah &gt;= 0) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                   
+pilihan.push(jawabanSalah);</p>
+<p style="line-height: 100%; margin-bottom: 0in">                }</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+pilihan.sort(() =&gt; Math.random() - 0.5);</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let
+tombols = document.querySelectorAll('.btn-option');</p>
+<p style="line-height: 100%; margin-bottom: 0in">            for (let
+i = 0; i &lt; tombols.length; i++) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+tombols[i].innerText = pilihan[i];</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+periksaJawaban(tombol) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let
+jawabanPemain = parseInt(tombol.innerText);</p>
+<p style="line-height: 100%; margin-bottom: 0in">            
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">            if
+(jawabanPemain === jawabanBenar) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                skor
++= 10;</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+perbaruiStatus();</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+buatSoalBaru();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            } else {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+kurangiNyawa();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+kurangiNyawa() {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            nyawa--;</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+perbaruiStatus();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            if
+(nyawa &lt;= 0) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+clearInterval(intervalTimer);</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+gameOver();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            } else {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+buatSoalBaru();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+perbaruiStatus() {</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('score').innerText = `Skor: ${skor}`;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            let hati
+= '';</p>
+<p style="line-height: 100%; margin-bottom: 0in">            for (let
+i = 0; i &lt; nyawa; i++) {</p>
+<p style="line-height: 100%; margin-bottom: 0in">                hati
++= '❤️';</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('lives').innerText = `Nyawa: ${hati}`;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">        function
+gameOver() {</p>
+<p style="line-height: 100%; margin-bottom: 0in">            //
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;!--
+3. MEMBERITAHU POKI GAMEPLAY BERHENTI      --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            &lt;!--
+========================================== --&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">            if
+(typeof PokiSDK !== 'undefined') {</p>
+<p style="line-height: 100%; margin-bottom: 0in">               
+PokiSDK.gameplayStop();</p>
+<p style="line-height: 100%; margin-bottom: 0in">            }</p>
+<p style="line-height: 100%; margin-bottom: 0in"><br/>
+
+</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('play-screen').style.display = 'none';</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('game-over-screen').style.display = 'block';</p>
+<p style="line-height: 100%; margin-bottom: 0in">           
+document.getElementById('final-score').innerText = skor;</p>
+<p style="line-height: 100%; margin-bottom: 0in">        }</p>
+<p style="line-height: 100%; margin-bottom: 0in">    &lt;/script&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;/body&gt;</p>
+<p style="line-height: 100%; margin-bottom: 0in">&lt;/html&gt;</p>
+</body>
+</html>
